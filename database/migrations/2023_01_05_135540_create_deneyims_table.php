@@ -13,15 +13,14 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('abouts', function (Blueprint $table) {
+        Schema::create('deneyims', function (Blueprint $table) {
             $table->id();
-            $table->string('title');
-            $table->text('description');
-            $table->string('cv')->nullable();
-            $table->text('teknoloji');
-            $table->text('askerlik')->nullable();
-            $table->text('dil')->nullable();
-            $table->text('ehliyet')->nullable();
+            $table->text('firma_adi');
+            $table->text('firma_sektoru');
+            $table->text('proje_adi');
+            $table->text('proje_yil');
+            $table->text('proje_yetkisi');
+            $table->text('proje_tanimi');
             $table->timestamps();
         });
     }
@@ -33,6 +32,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('abouts');
+        Schema::dropIfExists('deneyims');
     }
 };

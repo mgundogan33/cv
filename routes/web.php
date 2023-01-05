@@ -1,5 +1,8 @@
 <?php
 
+use App\Http\Controllers\Admin\AboutController;
+use App\Http\Controllers\Admin\HomeController;
+use App\Http\Controllers\Admin\InformationController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\CustomAuthController;
 
@@ -13,6 +16,7 @@ Route::get('registration', [CustomAuthController::class, 'registration'])->name(
 // Route::group(['middleware' => 'auth', 'isAdmin'], function () {
 // });
 
-Route::get('/admin.indez', function () {
-    return view('admin.indez');
-})->name('admin.indez');
+// Admin
+Route::resource('/admin_home', HomeController::class);
+Route::resource('/admin_information', InformationController::class);
+Route::resource('/admin_about', AboutController::class);

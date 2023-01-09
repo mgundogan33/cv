@@ -20,3 +20,7 @@ Route::get('registration', [CustomAuthController::class, 'registration'])->name(
 Route::resource('/admin_home', HomeController::class);
 Route::resource('/admin_information', InformationController::class);
 Route::resource('/admin_about', AboutController::class);
+
+// Route::get('/api',function(){
+//     return view('/api');
+// });

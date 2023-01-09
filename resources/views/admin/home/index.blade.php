@@ -1,4 +1,4 @@
-@extends('admin.layout.app')
+ @extends('admin.layout.app')
 @section('content')
      <!-- Content Body Start -->
      <div class="content-body">
@@ -39,4 +39,5 @@
         </div>
 
     </div>
-@endsection
+  
+@endsection 

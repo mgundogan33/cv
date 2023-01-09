@@ -138,7 +138,7 @@
                                     </div>
                                 </div>
                                 <div class="col-12 mb-20">
-                                    <input type="submit" value="submit" class="button button-primary">
+                                    <input type="submit" value="Güncelle" class="button button-primary">
                                 </div>
 
                             </div>

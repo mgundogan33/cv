@@ -15,10 +15,10 @@ return new class extends Migration
     {
         Schema::create('abouts', function (Blueprint $table) {
             $table->id();
-            $table->string('title');
-            $table->text('description');
+            $table->string('title')->nullable();
+            $table->text('description')->nullable();
             $table->string('cv')->nullable();
-            $table->text('teknoloji');
+            $table->longText('tags');
             $table->text('askerlik')->nullable();
             $table->text('dil')->nullable();
             $table->text('ehliyet')->nullable();

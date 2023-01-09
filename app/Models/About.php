@@ -14,8 +14,7 @@ class About extends Model
         'title',
         'description',
         'cv',
-        'teknoloji_title',
-        'teknoloji',
+        'tags',
         'askerlik',
         'dil',
         'ehliyet'

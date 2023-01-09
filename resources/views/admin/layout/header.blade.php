@@ -40,15 +40,16 @@
                                                <img src="assets/images/avatar/avatar-1.jpg" alt="">
                                                <span class="status"></span>
                                            </span>
-                                           <span class="name">{{ Auth::user()->name }}</span>
+                                          
+                                           {{-- <span class="name">{{ Auth::user()->name }}</span> --}}
                                        </span>
                                    </a>
 
                                    <!-- Dropdown -->
                                    <div class="adomx-dropdown-menu dropdown-menu-user">
                                        <div class="head">
-                                           <h5 class="name"><a href="#">{{ Auth::user()->name }}</a></h5>
-                                           <a class="mail" href="#">{{ Auth::user()->email }}</a>
+                                           {{-- <h5 class="name"><a href="#">{{ Auth::user()->name }}</a></h5>
+                                           <a class="email" href="#">{{ Auth::user()->email }}</a> --}}
                                        </div>
                                        <div class="body">
                                            <ul>
